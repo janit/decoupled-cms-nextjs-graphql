@@ -1,0 +1,24 @@
+{
+  "name": "react_rauma",
+  "version": "1.0.0",
+  "description": "React Rauma is the largest React.js conference in Finland. This is is the source of the site.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "author": "Jani Tarvainen",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-inline-dotenv": "^1.1.1",
+    "babel-plugin-transform-inline-environment-variables": "^0.1.1",
+    "dotenv": "^4.0.0",
+    "flat": "^4.0.0",
+    "graphql-client": "^2.0.0",
+    "html-react-parser": "^0.3.5",
+    "next": "^3.2.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
