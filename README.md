@@ -174,7 +174,7 @@ To pass parameters to the script to enable URL specific content for URLs, we wil
 
 The script is based on the example from the Next.js repository. It only matches URLs with the pattern `/activity/:id` and can be seen below:
 
-```
+```jsx
 const match = route("/activity/:id");
 
 app.prepare().then(() => {
@@ -195,7 +195,7 @@ app.prepare().then(() => {
 
 This script defined to be used via NPM scripts in package JSON when serving the app:
 
-```
+```jsx
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
@@ -209,7 +209,7 @@ Now that we've got access to URL variables, let's take a look at `pages/activity
 
 First off the `getInitialProps` method contains a GraphQL query, but it's using the dynamic variable via the ES6 template literal format (${id}):
 
-```
+```jsx
 static async getInitialProps({ query: { id } }) {
 let query = `
 
