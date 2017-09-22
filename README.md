@@ -47,7 +47,7 @@ The application uses a standard Next.js structure, with entrypoints in the pages
 
 The most simple example is the about page, which is a stateless React component:
 
-```
+```jsx
 import Link from 'next/link'
 import Head from 'next/head'
 import Layout from '../components/Layout'
@@ -99,7 +99,7 @@ To  get content from the eZ Platform repository using the GraphQL API we need a 
 
 The GraphQL query in the call is using eZ Platform content repository Public API via the GraphQL Bundle. The `rootLocationId` is a configuration value set in `.env`:
 
-```
+```jsx
 static async getInitialProps() {
 let query = `
 
@@ -145,7 +145,7 @@ return await client.query(query, variables);
 
 The result is set as `props` to the component and is rendered in the render function:
 
-```
+```jsx
 render() {
     let fields = simplifyFields(this.props.data.frontpage.content.fields);
 
@@ -244,7 +244,7 @@ return await client.query(query, variables);
 
 Secondly, the `render` method is familiar to the one from `pages/index.js`:
 
-```
+```jsx
 render() {
 let fields = simplifyFields(this.props.data.content.fields);
 
@@ -281,7 +281,7 @@ In the navigation component we are linking to individual pages. Here you use the
 
 What is noteworthy is the `as` attribute that allows aliasing paths to be displayed as `/activity/123` instead of with parameters, e.g. `/activity?id=123`. Otherwise the link generation is inline with standard JSX/Next.js methods:
 
-```
+```jsx
 <ul>
 {items.map(item => (
 <li key={item.content.id}>
