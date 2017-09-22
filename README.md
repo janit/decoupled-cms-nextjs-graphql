@@ -68,7 +68,7 @@ export default () => (
 );
 ```
 
-The above file in `pages/about.js` automatically maps to the address http://localhost:3000/pages/about.js
+The above file in `pages/about.js` automatically maps to the address http://localhost:3000/about
 
 Note the `Link` component which can be used to provide navigation from page to page in your application.
 
