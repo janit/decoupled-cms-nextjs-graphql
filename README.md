@@ -1,7 +1,7 @@
 
 # Decoupled CMS example with GraphQL and Next.js
 
-This repository contains the source code for the sample application from the talk "Easy decoupled sitebuilding with <a href="https://graphql.org">GraphQL</a> and <a href="github.com/zeit/next.js/">Next.js</a>" held in September 2017 at Drupalcon Vienna and Helsinki.js Meetup.
+This repository contains the source code for the sample application from the talk "Easy decoupled sitebuilding with <a href="https://graphql.org">GraphQL</a> and <a href="https://github.com/zeit/next.js/">Next.js</a>" held in September 2017 at Drupalcon Vienna and Helsinki.js Meetup.
 
 The application is an example of a front end implementation decoupled from the CMS backend used for content storage only. This example uses a hosted <a href="http://ezplatform.com">eZ Platform</a> instance with GraphQL enabled using the <a href="https://github.com/bdunogier/ezplatform-graphql-bundle">GraphQL Bundle</a>. This API is consumed by a Next.js frontend that uses React.js for templating and handles Server Side Rendering (SSR), etc. boilerplate.
 
@@ -58,7 +58,7 @@ export default () => (
       <title>Tietoa maailman suurimmasta suomenkielisestä React.js-konferenssista</title>
     </Head>
     <main>
-      <h1>Maailman suurin suomalainen React.js-konfferenssi</h1>
+      <h1>Maailman suurin suomalainen React.js-konferenssi</h1>
       <p>Onks tää joku vitsi?! No tavallaan.</p>
     </main>
     <aside>
