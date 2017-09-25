@@ -7,8 +7,8 @@ import Layout from "../components/Layout";
 import Navigation from "../components/Navigation";
 import { simplifyFields } from "../lib/contentUtils";
 
-let apiRoot = process.env.APIROOTURL;
-let rootLocationId = process.env.ROOTLOCATIONID;
+let apiRoot = process.env.API_ROOT;
+let rootLocationId = process.env.ROOT_LOCATION;
 
 var client = require("graphql-client")({
   url: apiRoot + "/graphql/"
@@ -16,6 +16,7 @@ var client = require("graphql-client")({
 
 export default class Index extends React.Component {
   static async getInitialProps() {
+
     let query = `
 
         {
@@ -53,6 +54,7 @@ export default class Index extends React.Component {
   }
 
   render() {
+
     let fields = simplifyFields(this.props.data.frontpage.content.fields);
 
     return (

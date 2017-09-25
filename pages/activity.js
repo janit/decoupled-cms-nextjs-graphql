@@ -1,5 +1,4 @@
 import React from "react";
-import { flat } from "flat";
 import Parser from "html-react-parser";
 
 import Link from "next/link";
@@ -8,8 +7,8 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import { simplifyFields } from "../lib/contentUtils";
 
-let apiRoot = process.env.APIROOTURL;
-let rootLocationId = process.env.ROOTLOCATIONID;
+let apiRoot = process.env.API_ROOT;
+let rootLocationId = process.env.ROOT_LOCATION;
 
 var client = require("graphql-client")({
   url: apiRoot + "/graphql/"
