@@ -12,10 +12,10 @@ The application is online at https://react.nu/ slides for the presentation are a
 
 The application can be ran either using NPM scripts in development and production mode, as per documentation of Next.js.
 
-If you've got a recent Node.js and Yarn versions installed, you should be able to do this for development mode:
+If you've got a recent Node.js and NPM versions installed, you should be able to do this for development mode:
 
 ```
-$ yarn
+$ npm i
 $ npm run dev
 ```
 
@@ -24,7 +24,7 @@ After that the app is available in http://localhost:3000/ . The first click is s
 For production mode you'll need to perform a build and then serve:
 
 ```
-$ yarn
+$ npm i
 $ npm run build
 $ npm run start
 ```

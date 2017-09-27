@@ -7,8 +7,8 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import { simplifyFields } from "../lib/contentUtils";
 
-let apiRoot = process.env.API_ROOT;
-let rootLocationId = process.env.ROOT_LOCATION;
+let apiRoot = 'https://v1-11-hbgl5gq-oiiukjqgkij7e.eu.platform.sh';
+let rootLocationId = 68;
 
 var client = require("graphql-client")({
   url: apiRoot + "/graphql/"
