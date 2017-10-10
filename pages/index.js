@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import Parser from "html-react-parser";
+import renderHTML from 'react-render-html';
 
 import Layout from "../components/Layout";
 import Navigation from "../components/Navigation";
@@ -64,7 +64,7 @@ export default class Index extends React.Component {
         </Head>
         <main>
           <h1>{fields.title}</h1>
-          {Parser(fields.body)}
+          {renderHTML(fields.body)}
         </main>
         <aside>
           <Navigation title="Ohjelmaa" items={this.props.data.activities} />

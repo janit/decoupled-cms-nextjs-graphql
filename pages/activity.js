@@ -1,5 +1,5 @@
 import React from "react";
-import Parser from "html-react-parser";
+import renderHTML from 'react-render-html';
 
 import Link from "next/link";
 import Head from "next/head";
@@ -55,7 +55,7 @@ export default class extends React.Component {
         </Head>
         <main>
           <h1>{fields.title}</h1>
-          {Parser(fields.body)}
+          {renderHTML(fields.body)}
           {fields.main_image ? (
             <p>
               <img src={apiRoot + fields.main_image} />
