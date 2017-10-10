@@ -32,11 +32,9 @@ export default class Layout extends React.Component {
               border-bottom-left-radius: 20px;
             }
 
-
             img {
               width: 640px;
             }
-
 
             .wrapper a {
               color: #fff;
