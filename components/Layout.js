@@ -12,11 +12,9 @@ export default class Layout extends React.Component {
               font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
 
-
             img {
               width: 640px;
             }
-
 
             @media (min-width: 40rem) {
 
@@ -43,7 +41,7 @@ export default class Layout extends React.Component {
             }
 
             header img {
-            width: 270px; 
+              width: 270px; 
             }
 
             main img {
