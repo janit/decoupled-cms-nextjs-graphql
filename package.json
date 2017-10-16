@@ -16,7 +16,7 @@
     "dotenv": "^4.0.0",
     "flat": "^4.0.0",
     "graphql-client": "^2.0.0",
-    "next": "^4.0.1",
+    "next": "^4.1.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-render-html": "^0.5.2"
