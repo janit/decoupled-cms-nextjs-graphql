@@ -7,8 +7,8 @@ import Layout from "../components/Layout";
 import Navigation from "../components/Navigation";
 import { simplifyFields } from "../lib/contentUtils";
 
-let apiRoot = 'https://v1-11-hbgl5gq-oiiukjqgkij7e.eu.platform.sh';
-let rootLocationId = 68;
+let apiRoot = 'https://api.react.nu';
+let rootLocationId = 118;
 
 var client = require("graphql-client")({
   url: apiRoot + "/graphql/"
