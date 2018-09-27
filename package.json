@@ -11,14 +11,14 @@
   "author": "Jani Tarvainen",
   "license": "ISC",
   "dependencies": {
-    "babel-plugin-inline-dotenv": "^1.1.1",
-    "babel-plugin-transform-inline-environment-variables": "^0.1.1",
-    "dotenv": "^4.0.0",
-    "flat": "^4.0.0",
+    "babel-plugin-inline-dotenv": "^1.1.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "dotenv": "^6.0.0",
+    "flat": "^4.1.0",
     "graphql-client": "^2.0.0",
-    "next": "^4.1.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "next": "^7.0.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "react-render-html": "^0.5.2"
   }
 }
