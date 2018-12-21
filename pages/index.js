@@ -11,7 +11,7 @@ let apiRoot = 'https://api.react.nu';
 let rootLocationId = 118;
 
 var client = require("graphql-client")({
-  url: apiRoot + "/graphql/"
+  url: apiRoot + "/graphql/graphql/repository"
 });
 
 export default class Index extends React.Component {
